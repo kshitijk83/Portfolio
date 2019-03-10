@@ -1,0 +1,61 @@
+// @import "compass/css3";
+
+$dark: #212121;
+$light: #000;
+$color: #b3e5fc;
+
+.btn{
+    transition-duration: 0.5s;
+    position: relative;
+    margin-left: 2rem;
+    width: 7rem;
+    height: 7rem;
+    
+    .icon {
+        transition-duration: 0.5s;
+        position: absolute;
+        height: .4rem;
+        width: 3rem;
+        top: 3rem;
+        background-color: $dark;
+        
+        &:before{
+        transition-duration: 0.5s;
+        position: absolute;
+        width: 3rem;
+        height: .4rem;
+        background-color: $dark;
+        content: "";
+        top: -1rem;
+        }
+        
+        &:after{
+        transition-duration: 0.5s;
+        position: absolute;
+        width: 3rem;
+        height: .4rem;
+        background-color: $dark;
+        content: "";
+        top: 1rem;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.open {
+    .icon {
+    transition-duration: 0.5s;
+    transform: rotateZ(-180deg);
+    
+    &:before{
+        transform: rotateZ(-45deg) scaleX(0.75) translate(-10px, -4px);
+    }
+
+    &:after{
+        transform: rotateZ(45deg) scaleX(0.75) translate(-10px, 4px);
+    }
+    }
+}

@@ -1,14 +1,14 @@
 import * as actionTypes from '../action/actionTypes/actionTypes';
 
 const initialState = {
-    blah: "asd"
+    showNav: true
 }
 
 const reducer = (state=initialState, action)=>{
     switch (action.type) {
-        case actionTypes.BLAH:
+        case actionTypes.SHOW_NAVBAR:
             return {
-                blah: action.change
+                showNav: !state.showNav
             }
     
         default:

@@ -1,1 +1,1 @@
-export const BLAH = "BLAH";
+export const SHOW_NAVBAR = "SHOW_NAVBAR";
