@@ -12,6 +12,28 @@ $color-nav: #02142d;
   &__right{
     width: 100%;
   }
+
+  .navAnimation-enter{
+    opacity: 0;
+    width: 0;
+    transition: .5s all ease-in-out; 
+  }
+
+  .navAnimation-enter-active{
+    opacity: 1;
+    width: 42rem;
+  }
+  
+  .navAnimation-exit{
+    opacity: 1;
+    width: 42rem;
+    transition: all .5s;
+  }
+
+  .navAnimation-exit-active{
+    opacity: 0;
+    width: 0;
+  }
 }
 
 #root{

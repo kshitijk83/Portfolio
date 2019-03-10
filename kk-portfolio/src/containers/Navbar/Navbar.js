@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Navbar.scss';
 // import { connect } from 'react-redux';
 // import * as actionTypes from '../../store/action/actionTypes/actionTypes';
 
@@ -8,7 +9,7 @@ class Navbar extends Component{
     render(){
         return(
             <>
-                <div className="App__left">navbar</div>
+                <div className="Navbar">navbar</div>
             </>
         )
     }

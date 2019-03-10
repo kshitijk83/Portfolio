@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './_App.scss';
-import './sass/utility/_navBtn.scss';
-
+import CSSTransition from 'react-transition-group/CSSTransition';
 // ----------------
 // ROUTING PACKAGES
 // ----------------
@@ -16,26 +15,30 @@ import { connect } from 'react-redux';
 // OTHER PACKAGES
 // --------------
 import Navbar from './containers/Navbar/Navbar';
+import NavBtn from './utility/navBtn/navBtn';
 import Profile from './containers/profile/profile';
 import Skills from './containers/skills/skills';
-import * as actionTypes from './store/action/actionTypes/actionTypes';
 
 class App extends Component {
 
 
   render() {
-    let classes=['menu', 'btn'];
-    if(!this.props.show){
-      classes.push('open');
-    }
-    let navbar = this.props.show?<Navbar/>:null;
+
+    // let navbar = this.props.show?<Navbar/>:null;
     return (
       <div className="App">
-        {navbar}
+          <CSSTransition
+            in={this.props.show}
+            timeout={2000}
+            classNames="navAnimation"
+            unmountOnExit
+            mountOnEnter >
+            <div className="App__left">
+              <Navbar />
+            </div>
+          </CSSTransition>
         <div className="App__right">
-          <div onClick={this.props.hideToggle} className={classes.join(' ')} data-menu="10">
-            <div className="icon"></div>
-          </div>
+          <NavBtn/>
           <Switch>
             <Route path="/profile" component={Profile} />
             <Route path="/skills" component={Skills} />
@@ -52,10 +55,4 @@ const mapStateToProps = state=>{
   }
 }
 
-const dispatchStateToProps=dispatch=>{
-  return{
-    hideToggle: ()=>dispatch({type: actionTypes.SHOW_NAVBAR})
-  }
-}
-
-export default connect(mapStateToProps, dispatchStateToProps)(App);
+export default connect(mapStateToProps, null)(App);
