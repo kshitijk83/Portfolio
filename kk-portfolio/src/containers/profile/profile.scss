@@ -1,0 +1,100 @@
+@import '../../sass/variables.scss';
+
+.profile{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: repeat(12, minmax(min-content, 1fr));
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    &_header{
+        grid-column: 1/span 3;
+        grid-row: span 2;
+        // justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    &_img{
+        grid-column: 1/span 4;
+        grid-row: 4/span 5;
+    }
+
+    &_desc{
+        grid-column: 5/-1;
+        grid-row: 4/span 6;
+    }
+
+    &_tagline{
+        font-family: 'Lobster', cursive;
+        font-size: 5rem;
+        grid-row: 11/span 2;
+        grid-column: 1/-1;
+        justify-self: center;
+        align-self: center;
+
+        &-svg{
+            width: 6rem;
+            display: inline-block;
+            .left{
+                width: 100%;
+                object-fit: cover;
+                transform: translate(0, -3rem);
+            }
+
+            .right{
+                width: 100%;
+                object-fit: cover;
+                transform: translate(0, -3rem);
+            }
+        }
+    }
+}
+
+.svg{
+    z-index: -11;
+}
+
+.svgBlue{
+    width: 25rem;
+}
+
+.svgYellow{
+    width: 48rem;
+}
+
+.svgYellow-left{
+    // grid-column: 1/2;
+    // grid-row: 1/2;
+    position: absolute;
+    bottom: -17rem;
+    left: -15rem;
+}
+
+.svgYellow-right{
+    position: absolute;
+    top: -15rem;
+    right: -19rem;
+}
+
+.svgBlue-left{
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+}
+
+.svgBlue-right{
+    position: absolute;
+    bottom: -10rem;
+    right: -10rem;
+}
+
+.svg{
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}

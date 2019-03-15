@@ -1,0 +1,17 @@
+@import '../../sass/variables.scss';
+
+.header{
+    font-size: $font-header-1;
+    display: flex;
+
+    &-bar{
+        width: 1.6rem;
+        height: 7.6rem;
+        background: $color-black;
+        margin-right: 3rem;
+    }
+}
+
+.header-leftTranslate{
+    margin-left: 4.7rem;
+}

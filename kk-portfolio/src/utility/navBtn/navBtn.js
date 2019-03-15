@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import * as actionTypes from '../../store/action/actionTypes/actionTypes';
 import './_navBtn.scss';
+import * as action from '../../store/action/action';
 
 const navBtn = (props) => {
 
@@ -24,7 +24,7 @@ const mapStateToProps = state=>{
 
 const dispatchStateToProps=dispatch=>{
     return{
-        hideToggle: ()=>dispatch({type: actionTypes.SHOW_NAVBAR})
+        hideToggle: ()=>dispatch(action.showToggle())
     }
 }
 

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="178.4" height="156.1" viewBox="0 0 178.4 156.1">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#707070}.cls-2{clip-path:url(#clip-path)}.cls-3{opacity:.75;fill:url(#linear-gradient)}.cls-4{fill:#0071bc}.cls-5{fill:url(#linear-gradient-2)}.cls-6{fill:#fcee21}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Rectangle_20" d="M0 0h178.4v156.1H0z" class="cls-1" data-name="Rectangle 20" transform="translate(99 59)"/>
+        </clipPath>
+        <linearGradient id="linear-gradient" x2="1" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset=".15" stop-color="#2e3192"/>
+            <stop offset=".8" stop-color="#0071bc"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x2="1" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset=".52" stop-color="#fcee21"/>
+            <stop offset="1" stop-color="#fbb03b"/>
+        </linearGradient>
+    </defs>
+    <g id="Mask_Group_2" class="cls-2" data-name="Mask Group 2" transform="translate(-99 -59)">
+        <g id="Kshitiz" transform="translate(108.826 59)">
+            <path id="Path_71" d="M386.56 300.762l-76.21-133.9v126.755c0 3.948 2.5 7.145 5.6 7.145z" class="cls-3" data-name="Path 71" transform="translate(-310.35 -144.662)"/>
+            <path id="Path_72" d="M386.56 136l-76.21 133.9V143.147c0-3.948 2.5-7.145 5.6-7.145z" class="cls-4" data-name="Path 72" transform="translate(-310.35 -136.002)"/>
+            <path id="Path_73" d="M425.09 136l76.21 133.9V143.147c0-3.948-2.5-7.145-5.6-7.145z" class="cls-5" data-name="Path 73" transform="translate(-342.552 -136.002)"/>
+            <path id="Path_74" d="M425.09 300.762l76.21-133.9v126.755c0 3.948-2.5 7.145-5.6 7.145z" class="cls-6" data-name="Path 74" transform="translate(-342.552 -144.662)"/>
+        </g>
+    </g>
+</svg>

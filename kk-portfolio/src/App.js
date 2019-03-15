@@ -23,11 +23,22 @@ class App extends Component {
 
 
   render() {
-
-    // let navbar = this.props.show?<Navbar/>:null;
+    // let navbar =(
+    //   <CSSTransition
+    //         in={this.props.show}
+    //         timeout={2000}
+    //         classNames="navAnimation"
+    //         unmountOnExit
+    //         mountOnEnter >
+    //         <div className="App__left">
+    //           <Navbar />
+    //         </div>
+    //       </CSSTransition>
+    // );
     return (
       <div className="App">
-          <CSSTransition
+          <Route path="/" render={()=>(
+            <CSSTransition
             in={this.props.show}
             timeout={2000}
             classNames="navAnimation"
@@ -37,11 +48,12 @@ class App extends Component {
               <Navbar />
             </div>
           </CSSTransition>
+          )} />
         <div className="App__right">
           <NavBtn/>
           <Switch>
-            <Route path="/profile" component={Profile} />
-            <Route path="/skills" component={Skills} />
+            <Route exact path="/profile" component={Profile} />
+            <Route exact path="/skills" component={Skills} />
           </Switch>
         </div>
       </div>
@@ -55,4 +67,4 @@ const mapStateToProps = state=>{
   }
 }
 
-export default connect(mapStateToProps, null)(App);
+export default connect(mapStateToProps, null, null, { pure: false})(App);

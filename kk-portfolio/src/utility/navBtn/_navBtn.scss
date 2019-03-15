@@ -10,6 +10,10 @@ $color: #b3e5fc;
     margin-left: 2rem;
     width: 7rem;
     height: 7rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1111;
     
     .icon {
         transition-duration: 0.5s;

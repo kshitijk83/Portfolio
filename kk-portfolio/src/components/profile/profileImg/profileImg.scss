@@ -1,0 +1,29 @@
+@import '../../../sass/variables.scss';
+
+.profileImg{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    &-back{
+        position: absolute;
+        top: 5rem;
+        left: 7.8rem;
+        z-index: -1;
+        width: 32rem;
+        height: 35.6rem;
+        background: black;
+    }
+
+    &-img{
+        width: 32rem;
+        object-fit: contain;
+
+        img{
+            width: 100%;
+        }
+    }
+}

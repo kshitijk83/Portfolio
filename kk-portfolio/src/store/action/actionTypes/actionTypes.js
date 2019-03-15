@@ -1,1 +1,2 @@
+export const SHOW_NAVBAR_WAIT = "SHOW_NAVBAR_WAIT";
 export const SHOW_NAVBAR = "SHOW_NAVBAR";

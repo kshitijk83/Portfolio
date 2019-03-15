@@ -1,4 +1,5 @@
-$color-nav: #02142d;
+@import "./sass/variables.scss";
+
 .App {
   display: flex;
   height: 100%;
@@ -6,7 +7,7 @@ $color-nav: #02142d;
   &__left{
     width: 42rem;
     height: 100vh;
-    background: $color-nav;
+    background: $color-black;
   }
 
   &__right{

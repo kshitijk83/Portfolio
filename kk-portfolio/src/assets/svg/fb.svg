@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="facebook-app-logo" transform="translate(0 -.001)">
+        <path id="Path_5" d="M43.46 0H2.539A2.539 2.539 0 0 0 0 2.54v40.921A2.54 2.54 0 0 0 2.539 46h22.03V28.187h-5.994v-6.943h5.994v-5.12c0-5.94 3.627-9.177 8.928-9.177a49.718 49.718 0 0 1 5.356.273v6.209h-3.677c-2.882 0-3.438 1.37-3.438 3.38v4.432h6.876l-.9 6.943h-5.976V46h11.721A2.541 2.541 0 0 0 46 43.461V2.538A2.539 2.539 0 0 0 43.46 0z" class="cls-1" data-name="Path 5"/>
+    </g>
+</svg>
