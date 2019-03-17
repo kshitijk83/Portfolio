@@ -4,8 +4,9 @@ import CSSTransition from 'react-transition-group/CSSTransition';
 // ----------------
 // ROUTING PACKAGES
 // ----------------
-import { Route, Switch } from 'react-router-dom';
-
+import { Route } from 'react-router-dom';
+import { AnimatedSwitch } from 'react-router-transition';
+import { bounce } from './utility/routerAnimations/anim';
 // --------------
 // REDUX PACKAGES
 // --------------
@@ -23,18 +24,6 @@ class App extends Component {
 
 
   render() {
-    // let navbar =(
-    //   <CSSTransition
-    //         in={this.props.show}
-    //         timeout={2000}
-    //         classNames="navAnimation"
-    //         unmountOnExit
-    //         mountOnEnter >
-    //         <div className="App__left">
-    //           <Navbar />
-    //         </div>
-    //       </CSSTransition>
-    // );
     return (
       <div className="App">
           <Route path="/" render={()=>(
@@ -51,10 +40,30 @@ class App extends Component {
           )} />
         <div className="App__right">
           <NavBtn/>
-          <Switch>
+          <AnimatedSwitch
+            atEnter ={{
+              opacity: 0,
+              scale: 1.2
+            }}
+            atLeave = {{
+              opacity: bounce(0),
+              scale: bounce(0.8),
+            }}
+            atActive={{
+              opacity: bounce(1),
+              scale: bounce(1)
+            }}
+            mapStyles={(styles)=>{
+              return{
+                opacity: styles.opacity,
+                scale: styles.scale 
+              }
+            }}
+            className="route-wrapper"
+            timeout={3000}>
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/skills" component={Skills} />
-          </Switch>
+          </AnimatedSwitch>
         </div>
       </div>
     );

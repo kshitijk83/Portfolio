@@ -12,6 +12,16 @@
 
   &__right{
     width: 100%;
+    height: 100vh;
+
+    .route-wrapper {
+      position: relative;
+    }
+    
+    .route-wrapper > div {
+      position: absolute;
+      height: 100vh;
+    } 
   }
 
   .navAnimation-enter{
