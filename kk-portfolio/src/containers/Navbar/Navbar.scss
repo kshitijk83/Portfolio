@@ -11,9 +11,18 @@
     transition: .5s all ease-in-out;
 
 
-    // &-img{
+    &-img{
         
-    // }
+        img{
+            @include respond(tab-land){
+                width: 13rem;
+            }
+
+            @include respond(tab-port){
+                width: 10.8rem;
+            }
+        }
+    }
 
     &-nav{
         width: 100%;
@@ -21,6 +30,10 @@
         flex-direction: column;
         align-items: center;
         
+        @include respond(tab-land){
+            font-size: 1.7rem;
+        }
+
         .nav{
             
             text-decoration: none;
@@ -39,6 +52,14 @@
 
                 div{
                     padding-left: 8rem;
+
+                    @include respond(tab-land){
+                        padding-left: 7rem;
+                    }
+
+                    @include respond(tab-port){
+                        padding-left: 6rem;
+                    }
 
                     .link{
                         text-decoration: none;

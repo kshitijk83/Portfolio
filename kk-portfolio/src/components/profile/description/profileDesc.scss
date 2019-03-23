@@ -9,20 +9,37 @@
     font-size: $font-desc;
     margin-left: 1rem;
 
+    @include respond(sd-screen){
+        margin: 1rem 0;
+        text-align: justify;
+    }
+
+    @include respond(phone){
+        margin: 3rem 0 0 0;
+    }
+
     & > *{
         margin-bottom: 2rem;
     }
 
     &-head{
         font-size: $font-header-2;
+
+        @include respond(sd-screen){
+            text-align: center;
+        }
     }
 
     &-desc{
         
+        @include respond(phone){
+            font-size: 1.7rem;
+        }
     }
 
     &-info{
         width: 100%;
+        
         ul{
             text-decoration: none;
             list-style: none;
@@ -33,9 +50,21 @@
             flex-wrap: wrap;
             // align-content: space-around;
 
+            @include respond(sd-screen){
+                align-items: center;
+            }
+
+            @include respond(phone){
+                height: auto;
+            }
+
             .list{
                 line-height: 2;
                 width: 50%;
+
+                @include respond(sd-screen){
+                    width: auto;
+                }
 
                 &-head{
                     display: inline-block;
@@ -52,24 +81,37 @@
 
     &-btn{
         display: flex;
-        // justify-content: space-around;
-        width: 100%;
+        width: 92%;
+
+        @include respond(sd-screen){
+            width: 100%;
+            justify-content: center;
+        }
 
         &-con{
-
-            // width: 40rem;
 
             .btn--black{
                 padding: 1.5rem 3.5rem;
                 background: black;
                 color: $color-white;
                 text-align: center;
+                cursor: pointer;
+
+                &:hover{
+                    color: black;
+                    background: $color-white;
+                    border: 1px solid black;
+                }
             }
             
         }
 
         .btn2{
             margin-left: 31.5%;
+
+            @include respond(phone){
+                margin-left: 2rem;
+            }
         }
     }
 }

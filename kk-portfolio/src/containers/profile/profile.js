@@ -28,19 +28,21 @@ class Profile extends Component{
                 <div className="profile_header">
                     <Header heading="About Us" />
                 </div>
-                <div className="profile_img">
-                    <ProfileImg />
-                </div>
-                <div className="profile_desc">
-                    <ProfileDesc />
-                </div>
-                <div className="profile_tagline">
-                    <div className="profile_tagline-svg">
-                        <img className="left" src={quotationLeft} alt="quote-left" />
+                <div className="profile_con">
+                    <div className="profile_img">
+                        <ProfileImg />
                     </div>
-                    Consistency matters, not perfection
-                    <div className="profile_tagline-svg">
-                        <img className="right" src={quotationRight} alt="quoute-right" />
+                    <div className="profile_desc">
+                        <ProfileDesc />
+                    </div>
+                    <div className="profile_tagline">
+                        <div className="profile_tagline-svg">
+                            <img className="left" src={quotationLeft} alt="quote-left" />
+                        </div>
+                        Consistency matters, not perfection
+                        <div className="profile_tagline-svg">
+                            <img className="right" src={quotationRight} alt="quoute-right" />
+                        </div>
                     </div>
                 </div>
             </div>

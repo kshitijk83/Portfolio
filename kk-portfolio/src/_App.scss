@@ -8,6 +8,18 @@
     width: 42rem;
     height: 100vh;
     background: $color-black;
+
+    @include respond(tab-land){
+      width: 32rem;
+    }
+
+    @include respond(tab-port){
+      position: absolute;
+      z-index: 100;
+      width: 25rem;
+      top: 0;
+      left: 0;  
+    }
   }
 
   &__right{
@@ -33,12 +45,20 @@
   .navAnimation-enter-active{
     opacity: 1;
     width: 42rem;
+
+    @include respond(tab-port){
+      width: 25rem;
+    }
   }
   
   .navAnimation-exit{
     opacity: 1;
     width: 42rem;
     transition: all .5s;
+
+    @include respond(tab-port){
+      width: 25rem;
+    }
   }
 
   .navAnimation-exit-active{

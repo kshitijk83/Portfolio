@@ -9,9 +9,19 @@
         height: 7.6rem;
         background: $color-black;
         margin-right: 3rem;
+
+        @include respond(phone){
+            width: 0.6rem;
+            height: 4.6rem;
+            margin-right: 1rem;
+        }
     }
 }
 
 .header-leftTranslate{
     margin-left: 4.7rem;
+
+    @include respond(phone){
+        margin-left: 1.7rem;
+    }
 }

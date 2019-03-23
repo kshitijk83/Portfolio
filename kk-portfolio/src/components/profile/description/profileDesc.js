@@ -9,8 +9,7 @@ const profileDesc = () => {
             rather than hard-work (a bit though!) and loves javaScript (like my girlfriend). Always ready to prove my skills. A chance is greater for me than a selection.
             I am currently a front-end web developer and learning nodejs for back-end development and wants to be a full stack MERN developer. I believe in smart work 
             rather than hard-work (a bit though!) and loves javaScript (like my girlfriend). Always ready to prove my skills. A chance is greater for me than a selection.
-            I am currently a front-end web developer and learning nodejs for back-end development and wants to be a full stack MERN developer. I believe in smart work 
-            rather than hard-work (a bit though!) and loves javaScript (like my girlfriend). Always ready to prove my skills. A chance is greater for me than a selection.</div>
+            </div>
             <div className="profileDesc-info">
                 <ul>
                     <li className="list">

@@ -11,11 +11,18 @@
     &-back{
         position: absolute;
         top: 5rem;
-        left: 7.8rem;
+        left: 5.8rem;
         z-index: -1;
         width: 32rem;
         height: 35.6rem;
         background: black;
+
+        @include respond(sd-screen){
+            top: 3rem;
+            left: 2.8rem;
+            width: 96%;
+            height: 96%;        
+        }
     }
 
     &-img{
