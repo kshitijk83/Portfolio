@@ -1,10 +1,13 @@
 import React from 'react';
 import './profileDesc.scss';
+import Head from './head/head';
 
 const profileDesc = () => {
     return (
         <div className="profileDesc">
-            <div className="profileDesc-head">I am Kshitiz and i am a Web Developer</div>
+            <div className="profileDesc-head">
+                I am Kshitiz and i am a <Head />
+            </div>
             <div className="profileDesc-desc">I am currently a front-end web developer and learning nodejs for back-end development and wants to be a full stack MERN developer. I believe in smart work 
             rather than hard-work (a bit though!) and loves javaScript (like my girlfriend). Always ready to prove my skills. A chance is greater for me than a selection.
             I am currently a front-end web developer and learning nodejs for back-end development and wants to be a full stack MERN developer. I believe in smart work 
