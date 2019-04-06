@@ -10,6 +10,11 @@ import blueRect from '../../assets/svg/Rectangle 16.svg';
 
 class Profile extends Component{
 
+    constructor(props){
+        super(props);
+        this.profileRef = React.createRef();
+    }
+
     render(){
         return(
             <div className="profile">
