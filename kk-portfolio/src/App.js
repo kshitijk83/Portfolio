@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './_App.scss';
 import CSSTransition from 'react-transition-group/CSSTransition';
+import TranstionGroup from 'react-transition-group/TransitionGroup';
 // ----------------
 // ROUTING PACKAGES
 // ----------------
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 // --------------
 // REDUX PACKAGES
 // --------------
@@ -37,9 +38,20 @@ class App extends Component {
           </CSSTransition>
           )} />
         <div className="App__right">
+          <Route render={({location})=>(
+            <TranstionGroup component={null}>
+              <CSSTransition
+              key={location.pathname}
+              classNames="fade"
+              timeout={100}>
+                <Switch location={location}>
+                  <Route exact path="/profile" component={Profile} />
+                  <Route exact path="/skills" component={Skills} />
+                </Switch>
+              </CSSTransition>
+            </TranstionGroup>
+          )} />
           <NavBtn/>
-            <Route exact path="/profile" component={Profile} />
-            <Route exact path="/skills" component={Skills} />
         </div>
       </div>
     );

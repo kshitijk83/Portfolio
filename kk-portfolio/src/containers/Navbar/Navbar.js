@@ -24,7 +24,7 @@ class Navbar extends Component{
                             <div><Link to="/profile" className="link">My Profile</Link></div>
                         </li>
                         <li>
-                            <div>Skills</div>
+                            <div><Link to="/skills" className="link">Skills</Link></div>
                         </li>
                         <li>
                             <div>Work Experience</div>
