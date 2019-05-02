@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Kshitiz" width="198.211" height="194.905" viewBox="0 0 198.211 194.905">
+    <defs>
+        <style>
+            .cls-1{opacity:.75;fill:url(#linear-gradient)}.cls-2{fill:#0071bc}.cls-3{fill:url(#linear-gradient-2)}.cls-4{fill:#fcee21}
+        </style>
+        <linearGradient id="linear-gradient" x2="1" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset=".15" stop-color="#2e3192"/>
+            <stop offset=".8" stop-color="#0071bc"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x2="1" y1=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset=".52" stop-color="#fcee21"/>
+            <stop offset="1" stop-color="#fbb03b"/>
+        </linearGradient>
+    </defs>
+    <path id="Path_1" d="M681.044 482.191L585.89 315v158.27c0 4.929 3.126 8.921 6.989 8.921z" class="cls-1" data-name="Path 1" transform="translate(-585.89 -287.286)"/>
+    <path id="Path_2" d="M681.044 256.75L585.89 423.941v-158.27c0-4.929 3.126-8.921 6.989-8.921z" class="cls-2" data-name="Path 2" transform="translate(-585.89 -256.75)"/>
+    <path id="Path_3" d="M802.5 256.75l95.154 167.191v-158.27c0-4.929-3.126-8.921-6.989-8.921z" class="cls-3" data-name="Path 3" transform="translate(-699.443 -256.75)"/>
+    <path id="Path_4" d="M802.5 482.191L897.654 315v158.27c0 4.929-3.126 8.921-6.989 8.921z" class="cls-4" data-name="Path 4" transform="translate(-699.443 -287.286)"/>
+</svg>

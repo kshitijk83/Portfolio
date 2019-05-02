@@ -1,0 +1,106 @@
+@import '../../sass/variables.scss';
+
+.skills{
+
+    width: 100%;
+    height: 100%;
+
+    &_header{
+        position: absolute;
+        top: 7rem;
+        left: 2rem;
+
+        @include respond(phone){
+            font-size: 1.7rem;
+        }
+
+        @include respond(tab-land){
+            top: 4rem;
+            left: 0rem;
+        }
+    }
+
+    &_con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10rem;
+        width: 100%;
+        height: 100%;
+
+        &-imgCon{
+            width: 80rem;
+            display: flex;
+            justify-content: space-between;
+            align-content: space-around;
+            flex-wrap: wrap;
+            position: relative;
+
+            @include respond(sd-screen){
+                width: 100%;
+            }
+
+            img{
+                // position: absolute;
+                width: 12rem;
+                // transform: scale(1.2);
+                margin: 1rem 2rem;
+                @include respond(sd-screen){
+                    width: 11rem;
+                }
+            }
+
+            .css{
+                // left: 20%;
+                // top: 20%;
+                // transform: translate(4rem, 3rem);
+            }
+
+            .sass{
+
+            }
+
+            .html{
+                // transform: translate(-11rem, 3rem);
+            }
+
+            .react{
+                // transform: translate(21rem, 0);
+            }
+
+            .js{
+
+            }
+
+            .nodejs{
+                // transform: translate(-14rem, 0);
+            }
+
+            .c{
+                // transform: translate(10rem, 0rem);
+            }
+
+            .xd{
+                // transform: translate(-3rem, 0);
+            }
+
+            .jquery{
+                // transform: translate(-16rem, 0rem);
+            }
+
+            .git{
+                // transform: translate(12rem, 0rem);
+            }
+
+            .reactRouter{
+
+            }
+
+            .redux{
+                // transform: translate(-15rem, -4rem);
+            }
+
+        }
+    }
+}
